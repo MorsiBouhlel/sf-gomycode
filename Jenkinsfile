@@ -8,7 +8,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                sh 'composer install'
+                echo 'build'
             }
         }
         stage('deliver'){
