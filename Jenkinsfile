@@ -14,6 +14,7 @@ pipeline{
         stage('deliver'){
             steps{
                 echo 'hello deliver'
+                rm -rf var/cache/*
             }
         }
     }
